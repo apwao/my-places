@@ -23,6 +23,17 @@ $(document).ready(function(){
     var newPlace = new Places(myName, myLocation, mySeason, myLandmark, myReview);
     $(".well ul").append("<li><span class='display'>" + newPlace.viewLocation() + "</span></li>")
 
-    
+    $("#my-places").last().click(function(){
+      $("#new-locations").show();
+      $("#new-locations h2").text(newPlace.name);
+      $(".name").text(newPlace.name);
+      $(".location").text(newPlace.location);
+      $(".time-season").text(newPlace.time);
+      $(".landmark").text(newPlace.landmark);
+      $(".review").text(newPlace.review);
+
+
+
+    });
   });
 });
