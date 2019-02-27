@@ -1,0 +1,12 @@
+#new-locations {
+  display: none;
+}
+
+#my-places {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+#my-places:hover {
+  text-decoration: underline;
+}
